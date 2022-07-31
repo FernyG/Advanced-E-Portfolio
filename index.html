@@ -56,6 +56,65 @@
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+                <p class="modal__para">
+                    I'm a 22 Mexican-American trying to break into tech and find myself looking to become an <b class="orange">Frontend software engineer</b>. I have a strong passion and drive to develop websites for great <b class="orange">user experiences</b>.
+                    <br>
+                    I am currently studying <b class="orange">html and javascript</b> in order to work on extremly difficult engineer problems and learn from a team consisiting of some of the most <b class="orange">talented</b> and <b class="orange">experienced software engineers</b> in order to better my own skills.
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">
+                    Let's have a chat!
+                </h3>
+                <h3 class="modal__sub-title modal__sub-title--contact">
+                    I'm currently open to new opportunities.
+                </h3>
+                <form id="contact__form" action="">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user__name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input" name="user__email" type="email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">Send it my way</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! I will be looking forward to speaking to you soon.
+                </div>
+            </div>
+            <i class="fas fa-times modal__exit click"></i>
+        </div>
     </section>
     <section id="projects">
         <div class="container">
@@ -93,5 +152,21 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <figure>
+                    <img class="footer__logo--img" src="./assets/logo.svg" alt="">
+                </figure>
+                <div class="footer__social--list">
+                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">Github</a>
+                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">Linkedin</a>
+                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">Contact</a>
+                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">Resume</a>
+                </div>
+                <div class="footer__copyright">Copyright © 2022 Fernando Gonzalez</div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
